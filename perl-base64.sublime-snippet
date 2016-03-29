@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+sub base64_encode {
+  return encode_base64($_[0], '');
+}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>perl-s-base64</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.perl</scope>
+  <description>Perl function base64 Snippet</description>
+</snippet>

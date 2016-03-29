@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+my \$browser = LWP::UserAgent->new(
+  agent => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  timeout => 8,
+  max_redirect => 0,
+  cookie_jar => HTTP::Cookies->new(autosave =>1, hide_cookie2=>1),
+);
+
+# bypass (some)firewall
+# \$browser->default_header('CLIENT_IP' => '127.0.0.1');
+# \$browser->default_header('X_FORWARDED_FOR' => '127.0.0.1');
+
+# just install LWP::Protocol::socks for tor
+# \$browser->proxy([qw/ http https /] => 'socks://localhost:9050'); # Tor proxy
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>perl-lwp</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.perl</scope>
+  <description>Perl Useragent Snippet</description>
+</snippet>

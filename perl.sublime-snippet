@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+#!/usr/bin/perl -w
+use Data::Dumper;
+use HTTP::Cookies;
+use LWP::UserAgent;
+use constant { true => 1, on => 1, false => 0, off => 0, none => 0, NULL => 0 };
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>perl</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.perl</scope>
+  <description>Perl Snippet</description>
+</snippet>
